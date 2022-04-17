@@ -1,0 +1,9 @@
+{
+  "checkpoint_dir": "/tmp",
+  "rpc_config": {
+    "port": "8880"
+  },
+  "http_config": {
+    "port": "8080"
+  }
+}

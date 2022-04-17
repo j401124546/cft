@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "./proto";
+
+package proto;
+
+message HeartbeatRequest {
+  string container_id = 1;
+  string container_name = 2;
+}
+
+message HeartBeatReply {
+  int32 status = 1;
+}
+

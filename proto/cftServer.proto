@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option go_package = "./proto";
+
+package proto;
+import "proto/heartbeat.proto";
+import "proto/snapshot.proto";
+
+service CftServer {
+  rpc HandleHeartbeat (proto.HeartbeatRequest) returns (proto.HeartBeatReply) {}
+  rpc HandleSnapshot (proto.SnapshotRequest) returns (proto.SnapshotReply) {}
+}

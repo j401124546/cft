@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "./proto";
+
+package proto;
+
+message SnapshotRequest {
+  string container_id = 1;
+  bytes data = 2;
+}
+
+message SnapshotReply {
+  string container_id = 1;
+  int32 status_id = 2;
+}
